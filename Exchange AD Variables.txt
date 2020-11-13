@@ -1,0 +1,2 @@
+Get-ADuser -Properties msExchHomeServerName -Filter {msExchHomeServerName -like '*'} | Select Name, msExchHomeServerName | Export-CSV C:\Users\Burwood\mailboxhome.csv
+get-Aduser ASkitch | Select LastLogonDate, PassowrdLAstSet,Enabled
